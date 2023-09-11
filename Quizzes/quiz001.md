@@ -1,5 +1,5 @@
 # Quiz 001
-<img width="977" alt="Screen Shot 2023-09-11 at 22 23 49" src="https://github.com/hasmhib/unit1-2024/assets/142870448/0ff54b81-4352-4ecb-83ef-fccf7b9edc21">
+<img width="max" alt="Screen Shot 2023-09-11 at 22 23 49" src="https://github.com/hasmhib/unit1-2024/assets/142870448/0ff54b81-4352-4ecb-83ef-fccf7b9edc21">
 
 ## Code
 
@@ -16,4 +16,4 @@ print(output)
 ```
 
 ## Proof of work
-<img width="547" alt="Screen Shot 2023-09-11 at 22 26 35" src="https://github.com/hasmhib/unit1-2024/assets/142870448/8066d27f-4621-477b-9024-1dd879adc00f">
+<img width="max" alt="Screen Shot 2023-09-11 at 22 26 35" src="https://github.com/hasmhib/unit1-2024/assets/142870448/8066d27f-4621-477b-9024-1dd879adc00f">
