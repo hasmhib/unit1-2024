@@ -32,5 +32,6 @@ print(result)
 ```
 
 ## Proof of work
-<img width="max" alt="Screen Shot 2023-09-12 at 0 54 13" src="https://github.com/hasmhib/unit1-2024/assets/142870448/71477710-e651-451a-a476-fc9976b944d6">
+<img width="max" alt="Screen Shot 2023-09-12 at 2 10 59" src="https://github.com/hasmhib/unit1-2024/assets/142870448/451e6a9c-d596-45f4-99dd-f073c803d6cd">
+
 
