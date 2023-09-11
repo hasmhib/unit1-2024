@@ -4,13 +4,35 @@
 ## Code
 
 ```py
-number= int(input("enter a number "))
+# Prompt the user for input, expecting an integer
+number = int(input("Enter a number: "))
+
+# Create an empty list to store the factors of the number
 factor = []
-for i in range(1,number+1):
-    if number% i == 0:
+
+# Initialize a variable to keep track of the sum of factors
+sum_of_factors = 0
+
+# Iterate through numbers from 1 to half of the input number
+for i in range(1, number // 2 + 1):
+    # Check if 'i' is a factor of 'number' (no remainder)
+    if number % i == 0:
+        # If 'i' is a factor, add it to the 'factor' list
         factor.append(i)
-print(factor)
+
+        # Add 'i' to the sum of factors
+        sum_of_factors += i
+
+# Check if the sum of factors equals the input number
+if sum_of_factors == number:
+    print(f"{factor}, True")
+else:
+    # If the sum of factors is not equal to the input number, print False
+    print(f"{factor}, False")
+
 ```
 
 ## Proof of work
-<img width="max" alt="Screen Shot 2023-09-11 at 23 01 48" src="https://github.com/hasmhib/unit1-2024/assets/142870448/c652db5a-87c1-45e0-897b-5dbc43b9f302">
+<img width="max" alt="Screen Shot 2023-09-12 at 1 38 58" src="https://github.com/hasmhib/unit1-2024/assets/142870448/ea2131e6-7150-45dd-b4ee-6c1b4fd4d961">
+
+<img width="max" alt="Screen Shot 2023-09-12 at 1 39 23" src="https://github.com/hasmhib/unit1-2024/assets/142870448/b29a463b-2295-4847-a70b-7148b1d0e883">
