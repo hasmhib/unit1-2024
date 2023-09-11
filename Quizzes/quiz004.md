@@ -1,5 +1,5 @@
 # Quiz 004
-<img width="1504" alt="Screen Shot 2023-09-11 at 22 40 35" src="https://github.com/hasmhib/unit1-2024/assets/142870448/22eba99d-7343-4dbd-8e63-6ad0a5778fe5">
+<img width="max" alt="Screen Shot 2023-09-11 at 22 40 35" src="https://github.com/hasmhib/unit1-2024/assets/142870448/22eba99d-7343-4dbd-8e63-6ad0a5778fe5">
 
 ## Code
 
@@ -13,4 +13,4 @@ print(factor)
 ```
 
 ## Proof of work
-<img width="439" alt="Screen Shot 2023-09-11 at 23 01 48" src="https://github.com/hasmhib/unit1-2024/assets/142870448/c652db5a-87c1-45e0-897b-5dbc43b9f302">
+<img width="max" alt="Screen Shot 2023-09-11 at 23 01 48" src="https://github.com/hasmhib/unit1-2024/assets/142870448/c652db5a-87c1-45e0-897b-5dbc43b9f302">
