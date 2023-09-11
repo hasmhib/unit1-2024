@@ -4,16 +4,16 @@
 ## Code
 
 ```py
-text = input("Input text: ")
-text = text.split()
-output = ""
-for word in text:
+words = input("Input text: ")
+words = words.split()
+abbreviated_text = []
+
+for word in words:
     if len(word) <= 2:
-        output += word
+        abbreviated_text.append(word)
     else:
-        output += (word[:1] + str(len(word) - 2) + word[-1:])
-print(output)
+        abbreviated_text.append(word[0] + str(len(word) - 2) + word[-1])
 ```
 
 ## Proof of work
-<img width="max" alt="Screen Shot 2023-09-11 at 22 26 35" src="https://github.com/hasmhib/unit1-2024/assets/142870448/8066d27f-4621-477b-9024-1dd879adc00f">
+<img width="646" alt="Screen Shot 2023-09-12 at 0 50 22" src="https://github.com/hasmhib/unit1-2024/assets/142870448/fb7ccfe9-8f3c-403b-95e3-cf67638e9f13">
