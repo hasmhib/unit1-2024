@@ -14,3 +14,6 @@ for word in text:
         output += (word[:1] + str(len(word) - 2) + word[-1:])
 print(output)
 ```
+
+##Proof of work
+<img width="547" alt="Screen Shot 2023-09-11 at 22 26 35" src="https://github.com/hasmhib/unit1-2024/assets/142870448/8066d27f-4621-477b-9024-1dd879adc00f">
