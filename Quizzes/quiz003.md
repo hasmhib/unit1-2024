@@ -1,5 +1,5 @@
 # Quiz 003
-<img width="1505" alt="Screen Shot 2023-09-11 at 22 36 32" src="https://github.com/hasmhib/unit1-2024/assets/142870448/a09e5f22-e66c-43f6-94a8-bd00aa01f543">
+<img width="max" alt="Screen Shot 2023-09-11 at 22 36 32" src="https://github.com/hasmhib/unit1-2024/assets/142870448/a09e5f22-e66c-43f6-94a8-bd00aa01f543">
 
 ## Code
 
@@ -46,4 +46,4 @@ case2 = translatesequence(sequence = "QAATTA")
 print(case2)
 ```
 
-<img width="516" alt="Screen Shot 2023-09-11 at 22 39 22" src="https://github.com/hasmhib/unit1-2024/assets/142870448/b36cdc52-de3c-4b98-966e-c91a73c5356e">
+<img width="max" alt="Screen Shot 2023-09-11 at 22 39 22" src="https://github.com/hasmhib/unit1-2024/assets/142870448/b36cdc52-de3c-4b98-966e-c91a73c5356e">
