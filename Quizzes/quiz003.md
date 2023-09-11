@@ -1,7 +1,7 @@
 # Quiz 003
 <img width="max" alt="Screen Shot 2023-09-11 at 22 36 32" src="https://github.com/hasmhib/unit1-2024/assets/142870448/a09e5f22-e66c-43f6-94a8-bd00aa01f543">
 
-## Code for Sl
+## Code for SL
 
 ```py
 def DNA_translator(in_protein: str) -> str:
