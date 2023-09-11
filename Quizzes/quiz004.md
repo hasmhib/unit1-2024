@@ -1,7 +1,7 @@
 # Quiz 004
 <img width="max" alt="Screen Shot 2023-09-11 at 22 40 35" src="https://github.com/hasmhib/unit1-2024/assets/142870448/22eba99d-7343-4dbd-8e63-6ad0a5778fe5">
 
-## Code
+## Code HL/SL
 
 ```py
 # Prompt the user for input, expecting an integer
@@ -32,7 +32,7 @@ else:
 
 ```
 
-## Proof of work
+## Proof of work HL/SL
 <img width="max" alt="Screen Shot 2023-09-12 at 1 38 58" src="https://github.com/hasmhib/unit1-2024/assets/142870448/ea2131e6-7150-45dd-b4ee-6c1b4fd4d961">
 
 <img width="max" alt="Screen Shot 2023-09-12 at 1 39 23" src="https://github.com/hasmhib/unit1-2024/assets/142870448/b29a463b-2295-4847-a70b-7148b1d0e883">
