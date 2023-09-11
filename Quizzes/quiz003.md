@@ -1,49 +1,69 @@
 # Quiz 003
 <img width="max" alt="Screen Shot 2023-09-11 at 22 36 32" src="https://github.com/hasmhib/unit1-2024/assets/142870448/a09e5f22-e66c-43f6-94a8-bd00aa01f543">
 
-## Code
+## Code for Sl
 
 ```py
-def DNA_translator(in_protein:str)->str:
+def DNA_translator(in_protein: str) -> str:
+    # Check if the input protein is one of ATGC
     if in_protein in "ATGC":
-        if in_protein == ("A"):
+        # Translate the input protein to its complement
+        if in_protein == "A":
             out_protein = "T"
-        if in_protein == ("G"):
+        elif in_protein == "G":
             out_protein = "C"
-        if in_protein == ("T"):
+        elif in_protein == "T":
             out_protein = "A"
-        if in_protein == ("C"):
+        elif in_protein == "C":
             out_protein = "G"
-
     else:
-        out_protein = "[error]input is not one of ATGC"
+        # Handle the case when the input is not one of ATGC
+        out_protein = "[error] Input is not one of ATGC"
 
     return out_protein
 
-def translatesequence(sequence:str)->str:
+```
+
+## Proof of work SL
+
+```py
+# Test case 1: Translate a single protein
+case1 = DNA_translator(in_protein="A")
+print(case1)
+```
+<img width="max" alt="Screen Shot 2023-09-12 at 1 13 23" src="https://github.com/hasmhib/unit1-2024/assets/142870448/99b5a0ef-54dd-4022-b3ec-8586887cf662">
+
+## Code for HL
+
+```py
+def translatesequence(sequence: str) -> str:
     output_sequence = ""
+
     for p in sequence:
-        print(f"Translating proten {p}")
+        # Translate each protein in the sequence
+        print(f"Translating protein {p}")
         t = DNA_translator(in_protein=p)
+
+        # Check if the translation result is a valid protein (ATGC)
         if t in 'ATGC':
             output_sequence += t
         else:
-            print("[error]protein {p} is skipped")
+            # Handle the case when a protein is skipped
+            print(f"[error] Protein {p} is skipped")
 
         print(f"Translating successful {output_sequence}")
 
     return output_sequence
 ```
 
-## Proof of work
+## Proof of work HL
 
 ```py
-case1 = DNA_translator(in_protein="A")
-print(case1)
-
-
-case2 = translatesequence(sequence = "QAATTA")
+# Test case 2: Translate a sequence of proteins
+case2 = translatesequence(sequence="QAATTA")
 print(case2)
 ```
+<img width="max" alt="Screen Shot 2023-09-12 at 1 17 34" src="https://github.com/hasmhib/unit1-2024/assets/142870448/7725be00-3dfd-4082-9778-b9c0a9631021">
 
-<img width="max" alt="Screen Shot 2023-09-11 at 22 39 22" src="https://github.com/hasmhib/unit1-2024/assets/142870448/b36cdc52-de3c-4b98-966e-c91a73c5356e">
+
+
