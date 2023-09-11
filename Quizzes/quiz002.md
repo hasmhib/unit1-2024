@@ -23,8 +23,9 @@ print(output)
 
 ```
 
-## Proof of work SL
-<img width="max" alt="Screen Shot 2023-09-12 at 0 59 49" src="https://github.com/hasmhib/unit1-2024/assets/142870448/6fc2f98f-e5a0-4761-9434-440172decf8b">
+## Proof of work for SL
+<img width="max" alt="Screen Shot 2023-09-12 at 2 12 59" src="https://github.com/hasmhib/unit1-2024/assets/142870448/188eaa8a-d030-45b7-9da5-71d9b42fc3d9">
+
 
 ## Code for HL
 
@@ -48,5 +49,5 @@ for i in range(len(HL[0])):
 print(output)
 ```
 
-## Proof of work HL
-<img width="max" alt="Screen Shot 2023-09-12 at 1 04 19" src="https://github.com/hasmhib/unit1-2024/assets/142870448/3da270b2-61da-46a6-aa0b-8616cb87a710">
+## Proof of work for HL
+<img width="max" alt="Screen Shot 2023-09-12 at 2 12 10" src="https://github.com/hasmhib/unit1-2024/assets/142870448/be9b2a00-6a93-4897-a4c9-2717e02e0039">
