@@ -6,7 +6,7 @@
 
 ## Proof of work for SL
 
-## Code for Hl
+## Code for HL
 ```py
 ```
 
