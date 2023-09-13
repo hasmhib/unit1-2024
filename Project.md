@@ -33,7 +33,7 @@ An example of the data stored is
 ## Proposed Solution
 
 Design statement:
-I will to design and make a ———— for a client who is ———. The ——– will about ———— and is constructed using the software ———. It will take  ———- to make and will be evaluated according to the criteria ———.
+I will to design and make a crypto wallet application for a client who is s a local trader. The crypto wallet will be about tracking crypto wallet transactions and is constructed using the software python. It will take  3 weekns to make and will be evaluated according to the criteria A.
 
 ** add a description of your coin and citation **
 
@@ -41,11 +41,11 @@ Justify the tools/structure of your solution
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
-2. The electronic ledger display the basic description of the cyrptocurrency selected.
+2. The electronic ledger display the value in Japanese Yen, date created and the number of users of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
-4.
-5.
-6.
+4. The electronic ledger can sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others)
+5. The electronic ledger allows the user to see the transaction amount in Japanese Yen.
+6. The electronic ledger allows the user to set the limit for amount of cryptocurrency to spend per month. 
 
 # Criteria B: Design
 
