@@ -44,7 +44,7 @@ Justify the tools/structure of your solution
 2. The electronic ledger display the value in Japanese Yen, date created and the number of users of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
 4. The electronic ledger can sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others)
-5. The electronic ledger allows the user to see the transaction amount in Japanese Yen.
+5. The electronic ledger encryps user information such as bank number, 
 6. The electronic ledger allows the user to set the limit for amount of cryptocurrency to spend per month. 
 
 # Criteria B: Design
