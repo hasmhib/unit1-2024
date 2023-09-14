@@ -58,4 +58,4 @@ Justify the tools/structure of your solution
 | Task No | Planned Action                         | Planned Outcome                                                                          | Time estimate | Target completion date | Criterion |
 |---------|----------------------------------------|------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1       | Create system diagram                  | To have a clear idea of the hardware and software requirements for the proposed solution | 10min         | Sep 24                 | B         |
-| 2       | Create flow diagram for login function | A flow diagram and the code tested                                                       | 30min         | sep 14                 | B,C       |
+| 2       | Create flow diagram for login function | A flow diagram and the code tested                                                       | 30min         | Sep 14                 | B,C       |
