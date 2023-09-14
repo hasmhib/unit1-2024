@@ -52,7 +52,9 @@ Justify the tools/structure of your solution
 ## System Diagram
 
 ## Flow Diagrams
-
+### Login system
+[photos]
+**Figure1** flow diagram for the registration system. Note: there is some Python code in the operations. 
 
 ## Record of Tasks
 | Task No | Planned Action                         | Planned Outcome                                                                          | Time estimate | Target completion date | Criterion |
@@ -64,25 +66,36 @@ Justify the tools/structure of your solution
 
 ## Login System
 My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using a if condition and the open command to work with a csv file. More description of the code....
+The flow diagram for program is shown in **Figure1** in the first line of the code. I am defining a function called try_login with two inputs (name and password) ,both are type string. The output is boolean becasue I only need a True if the user and password exist in the database file. 
+
 ```.py
-def simple_login(user:str, password:str)->bool:
-    '''
-    Simple authentication, needs fle user.csv
-    :param user: string
-    :param password: string
-    :return: True/False if user is in database
-    '''
-    with open("user.csv") as file:
-        database = file.readlines()
-    output = False
-    for line in database:
-        line_cleaned = line.strip() #remove \n
-        user_pass = line_cleaned.split(",")
-        if user == user_pass[0] and password == user_pass[1]:
-            output = True
+def try_login(name:str, password:str)->bool:
+    with open("users.csv", mode='r') as f:
+        data = f.readlines()
+    logged_in = False
+    for line in data:
+        uname = line.split(',')[0]
+        upass = line.split(',')[1].strip()
+
+        if uname == name and upass == password:
+            logged_in = True
             break
+    return logged_in
 
-    return output
+attempts = 3
+name = input("Please enter your username")
+password = input("Please enter your password")
+result = try_login(name = name,password = password)
+while result == False and attempts>0:
+    name = input("[Error] Please enter your username")
+    password = input("Please enter your password")
+    result = try_login(name=name, password=password)
+    attempts -= 1
 
+if result == False:
+    print("You are not authorized. Exiting")
+    exit(1)
 
+if result == True:
+    print("Welcome")
 ```
