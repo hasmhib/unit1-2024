@@ -43,8 +43,8 @@ Justify the tools/structure of your solution
 1. The electronic ledger is a text-based software (Runs in the Terminal).
 2. The electronic ledger display the value in Japanese Yen, date created and the number of users of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
-4. The electronic ledger can sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others)
-5. The electronic ledger encryps user information such as bank number.
+4. The electronic ledger sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others)
+5. Only the client has an access to the electronic ledger.
 6. The electronic ledger allows the user to set the limit for amount of cryptocurrency to spend per month. 
 
 # Criteria B: Design
