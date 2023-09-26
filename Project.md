@@ -103,3 +103,29 @@ if result == False:
 if result == True:
     print("Welcome")
 ```
+
+## Option 1: Deposit
+
+```.py
+if option == 1: #deposit
+    msg_deposit = "Enter amount to deposit"
+    amount = validate_int_user(msg=msg_deposit, menu="")
+    date = datetime.date.today()
+    yen = round(145.3 * int(amount), 2)
+    with open('atm.csv', mode='a') as f:
+        line = f"{date},Deposit,{amount},{yen}\n"
+        f.writelines(line)
+    print("Saved")
+```
+
+## Option 2: Withdraw
+```.py
+```
+
+## Option 3: Balance
+```.py
+```
+
+## Option 5: Transactions
+```.py
+```
