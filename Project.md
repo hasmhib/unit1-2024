@@ -53,7 +53,8 @@ Justify the tools/structure of your solution
 
 ## System Diagram
 
-<img width="max" alt="Screen Shot 2023-09-19 at 15 06 42" src="https://github.com/hasmhib/unit1-2024/assets/142870448/35abb31c-b136-4325-9a51-f2c0c5f0d038">
+<img width="max" alt="Screen Shot 2023-10-03 at 14 48 23" src="https://github.com/hasmhib/unit1-2024/assets/142870448/f08ed5df-a562-465b-8b09-fca9c49b5039">
+
 
 
 
@@ -65,14 +66,26 @@ Justify the tools/structure of your solution
 ## Record of Tasks
 | Task No | Planned Action                         | Planned Outcome                                                                          | Time estimate | Target completion date | Criterion |
 |---------|----------------------------------------|------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Create system diagram                  | To have a clear idea of the hardware and software requirements for the proposed solution | 10min         | Sep 24                 | B         |
+| 1       | Create system diagram                  | To have a clear idea of the hardware and software requirements for the proposed solution | 10min         | Sep 14                 | B         |
 | 2       | Create flow diagram for login function | A flow diagram and the code tested                                                       | 30min         | Sep 14                 | B,C       |
+| 3       | Create a simple registration and login system | To create a program that allows the user to register and login to their digital ledger using a username and password they created. | 1 hour | Sep 26  | C       |
+| 4       | Code menu options and allow user interaction | Code that can sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) to allow users to sort transactions by using number that corresponds to the numbers on the list.  | 2 hours | Sep 27  | C       |
+| 5       | Code a menu for deposit and withdraw | Code option 1 and 2 to allow users to save the amount of deposit and withdraw. This data will saved in atm.csv. | 1 hour | Sep 27  | C       |
+| 6       | Code a display to show the balance after money is either deposited or withdrawn | Code a function that would add or subtract the amount of money deposited or withdrawn from the balance and print the updated balance | 30 min | Sep 29  | C       |
+| 7       | Create a visual graph for transaction data | Code that creates the graph of how much the user spent. | 1 hour | Sep 29  | C       |
+| 8       | Create a visual display for transaction data | Print total balance, total money in and total money out to visualize the transactions. | 1 hour | Sep 29  | C       |
+
 
 # Criteria C: Development
 
 ## Login System
-My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using a if condition and the open command to work with a csv file. More description of the code....
+My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using a if condition and the open command to work with a csv file.
+
 The flow diagram for program is shown in **Figure1** in the first line of the code. I am defining a function called try_login with two inputs (name and password) ,both are type string. The output is boolean becasue I only need a True if the user and password exist in the database file. 
+
+**Figure1**
+![IMG_0020](https://github.com/hasmhib/unit1-2024/assets/142870448/73cb0e76-25a0-4fe6-abee-05a2562b329c)
+
 
 ```.py
 def try_login(name:str, password:str)->bool:
@@ -107,20 +120,13 @@ if result == True:
 ```
 
 ## Option 1: Deposit
-
+My cleint 
 ```.py
-if option == 1: #deposit
-    msg_deposit = "Enter amount to deposit"
-    amount = validate_int_user(msg=msg_deposit, menu="")
-    date = datetime.date.today()
-    yen = round(145.3 * int(amount), 2)
-    with open('atm.csv', mode='a') as f:
-        line = f"{date},Deposit,{amount},{yen}\n"
-        f.writelines(line)
-    print("Saved")
 ```
 
 ## Option 2: Withdraw
+My client wants to sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) so I used while loop and brackets [] to allow users to sort transactions by using number that corresponds to the numbers on the list. 
+
 ```.py
 ```
 
@@ -129,5 +135,10 @@ if option == 1: #deposit
 ```
 
 ## Option 5: Transactions
+The code above prints out the users recorded transactions by using for loop. This will allow the client to easliy see all of their past transaction data. It is simple and visually appealing. With the for loop, it will continue to go through the data in the "atm.csv" file and print the data into an organized spreadsheet with all the data in the appropiate column until there is no more data to print. It makes sure each piece of information is placed in the correct column to prevent disorganization.
+```.py
+```
+
+## Set the limit of cryptocurrency to use per month
 ```.py
 ```
