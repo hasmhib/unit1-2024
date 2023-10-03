@@ -53,9 +53,7 @@ Justify the tools/structure of your solution
 
 ## System Diagram
 
-<img width="max" alt="Screen Shot 2023-10-03 at 14 48 23" src="https://github.com/hasmhib/unit1-2024/assets/142870448/f08ed5df-a562-465b-8b09-fca9c49b5039">
-
-
+<img width="max" alt="Screen Shot 2023-10-03 at 23 08 04" src="https://github.com/hasmhib/unit1-2024/assets/142870448/c6bcbaae-e1d9-4958-8126-835b4937d8ff">
 
 
 ## Flow Diagrams
@@ -81,7 +79,7 @@ Justify the tools/structure of your solution
 ## Login System
 My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using a if condition and the open command to work with a csv file.
 
-The flow diagram for program is shown in **Figure1** in the first line of the code. I am defining a function called try_login with two inputs (name and password) ,both are type string. The output is boolean becasue I only need a True if the user and password exist in the database file. 
+The flow diagram for program is shown in **Figure1** in the first line of the code. I am defining a function called try_login with two inputs (name and password) ,both are type string. The output is boolean because I only need a True if the user and password exist in the database file. 
 
 **Figure1**
 ![IMG_0020](https://github.com/hasmhib/unit1-2024/assets/142870448/73cb0e76-25a0-4fe6-abee-05a2562b329c)
