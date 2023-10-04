@@ -103,7 +103,7 @@ Fig 4. The flow diagram for the deposit function of this system. It will ask for
 
 # Criteria C: Development
 
-## Option 1: User Registration
+## User Registration
 ```.py
 email = input("Enter email address: ")
 password = input("Enter password: ")
@@ -122,6 +122,22 @@ else:
     print("Password is not same as above! \n")
 ```
 The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, and it adds their crendentials into a file if the if statement of confirming whether the provided password and confirmation password matches is true. Registered users will be able to login afterwards, and use the functions provided by this program. When registeration is complete, users are given two options of whether exiting the program or continuing to a login screen. This is also coded with if,elif statements. 
+
+
+## Option 1: Deposit
+```.py
+msg_deposit = "Enter amount to deposit($): "
+amount = validate_int_user(msg=msg_deposit, menu="")
+date = datetime.date.today()
+yen = round(145.3 * int(amount), 2)
+with open('atm.csv', mode='a') as f:
+    line = f"{date},Deposit,{amount},{yen}\n"
+    f.writelines(line)
+print("Saved")
+menu()
+```
+The client wants to be able to deposit USD coins into their cryptocurrency wallet. This code asks the user for the amount of USD coins they would like to deposit to their wallet, and records a transaction of the respective deposition into the atm.csv file. Informations such as date of the depsition and JPY conversion of the USD coins are also provided as record. 
+
 
 ## Option 2: Withdraw
 ```.py
@@ -166,19 +182,6 @@ The first part of creating a digital ledger for a client is to create a registra
 ```
 My client wants to sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) so I used while loop and brackets [] to allow users to sort transactions by using number that corresponds to the numbers on the list. Also, by using option 6, the user enables to set the limit amoount of cryptocurrency per month and ensure that her spendigns will not exceed her expected expenditure unwillingly. 
 
-## Option 3: Deposit
-```.py
-msg_deposit = "Enter amount to deposit($): "
-amount = validate_int_user(msg=msg_deposit, menu="")
-date = datetime.date.today()
-yen = round(145.3 * int(amount), 2)
-with open('atm.csv', mode='a') as f:
-    line = f"{date},Deposit,{amount},{yen}\n"
-    f.writelines(line)
-print("Saved")
-menu()
-```
-The client wants to be able to deposit USD coins into their cryptocurrency wallet. This code asks the user for the amount of USD coins they would like to deposit to their wallet, and records a transaction of the respective deposition into the atm.csv file. Informations such as date of the depsition and JPY conversion of the USD coins are also provided as record. 
 
 ## Option 4: Transaction history
 ```.py
