@@ -62,11 +62,17 @@ Justify the tools/structure of your solution
 | 1       | Create system diagram                  | To have a clear idea of the hardware and software requirements for the proposed solution | 10min         | Sep 14                 | B         |
 | 2       | Create flow diagram for login function | A flow diagram and the code tested                                                       | 30min         | Sep 14                 | B,C       |
 | 3       | Create a simple registration and login system | To create a program that allows the user to register and login to their digital ledger using a username and password they created. | 1 hour | Sep 26  | C       |
-| 4       | Code menu options and allow user interaction | Code that can sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) to allow users to sort transactions by using number that corresponds to the numbers on the list.  | 2 hours | Sep 27  | C       |
+| 4       | Code menu options and allow user interaction | The user can choose different options from the menu (Ex: Option 1: Deposit, and the user will be able to choose Option 1 to deposit the money).  | 2 hours | Sep 27  | C       |
 | 5       | Code a menu for deposit and withdraw | Code option 1 and 2 to allow users to save the amount of deposit and withdraw. This data will saved in atm.csv. | 1 hour | Sep 27  | C       |
 | 6       | Code a display to show the balance after money is either deposited or withdrawn | Code a function that would add or subtract the amount of money deposited or withdrawn from the balance and print the updated balance | 30 min | Sep 29  | C       |
-| 7       | Create a visual graph for transaction data | Code that creates the graph of how much the user spent. | 1 hour | Sep 29  | C       |
+| 7       | Code a system that converts USD coin into Japanese Yen	 | Import currency rates to convert USD coin into Japanese Yen | 1 hour | Sep 29  | C       |
 | 8       | Create a visual display for transaction data | Print total balance, total money in and total money out to visualize the transactions. | 1 hour | Sep 29  | C       |
+| 9       | Code transaction functions | Create a code that allows the user to record when they made the transaction, what kind of transaction it was, and how much the transaction was. The code will then transfer all of that information into a spreadsheet and bar graph, with accurate data | 2 hour | Sep 29  | C       |
+| 10       | Code that users can set the limit amount of cryptocurrency to spend | Code option 5 that the users can set the limit of cryptocurrency to spend per month. | 1 hour | 0ct 2  | B       |
+| 11       | Create a system that the user can set the limit of cryptocurrency to spend per month| Check every time if they want to withdraw a money and if the amount they used during a month does not go over the amount they set. | 2 hour | 0ct 2  | B       |
+| 12       | Create system diagram | To have a idea about the hardware and software requirements for the user-based solution | 1 hour | Oct 3  | C       |
+| 13       | Draw and describe the flow diagrams | Flow diagrams for the different code, and some brief explanations | 1 hour | 0ct 4  | B       |
+| 14       | Write the test plans | Procedures one should take to test the program and the expected outcome of each test is on Github | 1 hour | 0ct 4  | B       |
 
 
 # Criteria C: Development
@@ -118,7 +124,7 @@ My cleint
 ```
 
 ## Option 2: Withdraw
-My client wants to sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) so I used while loop and brackets [] to allow users to sort transactions by using number that corresponds to the numbers on the list. 
+My client wants to sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) so I used while loop and brackets [] to allow users to sort transactions by using number that corresponds to the numbers on the list. Also, by using option 6, the user enables to set the limit amoount of cryptocurrency per month and 
 
 ```.py
 ```
@@ -132,6 +138,7 @@ The code above prints out the users recorded transactions by using for loop. Thi
 ```.py
 ```
 
-## Set the limit of cryptocurrency to use per month
+## Option 6: Set the limit of cryptocurrency to use per month
+
 ```.py
 ```
