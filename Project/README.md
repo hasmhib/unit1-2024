@@ -104,7 +104,6 @@ Fig 4. The flow diagram for the deposit function of this system. It will ask for
 # Criteria C: Development
 
 ## Option 1: User Registration
-My cleint 
 ```.py
 email = input("Enter email address: ")
 password = input("Enter password: ")
