@@ -40,6 +40,7 @@ Justify the tools/structure of your solution
 ## System Diagram
 
 <img width="max" alt="Screen Shot 2023-10-03 at 23 08 04" src="https://github.com/hasmhib/unit1-2024/assets/142870448/c6bcbaae-e1d9-4958-8126-835b4937d8ff">
+Fig 1. System diagram for the cryptocurrency wallet. It shows the input/output tput and software/hardware, and how the program runs on Python as well as the different databases the code exchanges information.
  
 
 ## Record of Tasks
@@ -59,6 +60,19 @@ Justify the tools/structure of your solution
 | 12       | Create system diagram | To have a idea about the hardware and software requirements for the user-based solution | 1 hour | Oct 3  | C       |
 | 13       | Draw and describe the flow diagrams | Flow diagrams for the different code, and some brief explanations | 1 hour | 0ct 4  | B       |
 | 14       | Write the test plans | Procedures one should take to test the program and the expected outcome of each test is on Github | 1 hour | 0ct 4  | B       |
+
+## Flowcharts
+
+![386459934_1200604738009110_2348546487285065411_n](https://github.com/hasmhib/unit1-2024/assets/142870448/5df7cdc9-2276-49d6-8a6b-2a0f7b2ab4a8)
+Fig 2. The flow diagram for the sign up system where clients can create an account and start using sing the cryptocurrency wallet. It receives inputs from the user, opens up a csv file named "users.csv" and appends that data into the database if the given password and the confirmation password matches. When that is successfully complete, it will notify the user and proceeds to ask if they would like to exit or continue to login. if exit, it will execute exit(), and if login, it will execute the login() function. 
+
+![386863920_1626443091098644_456211345082400213_n](https://github.com/hasmhib/unit1-2024/assets/142870448/b4e595bf-8e7d-40f0-8f69-0590266a418c)
+Fig 3. 
+
+![384547502_833611304885865_6744060710249008360_n](https://github.com/hasmhib/unit1-2024/assets/142870448/69210792-6951-48bb-9527-7bfe17c87076)
+Fig 4. 
+
+
 
 
 # Criteria C: Development
