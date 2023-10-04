@@ -50,7 +50,7 @@ citations : https://www.investopedia.com/usd-coin-5210435#:~:text=USD%20Coin%20(
 
 ## System Diagram
 
-<img width="max" alt="Screen Shot 2023-10-03 at 23 08 04" src="https://github.com/hasmhib/unit1-2024/assets/142870448/c6bcbaae-e1d9-4958-8126-835b4937d8ff">
+<img width="max" alt="Screen Shot 2023-10-05 at 2 58 16" src="https://github.com/hasmhib/unit1-2024/assets/142870448/5b5d43d1-1065-4c35-8448-fd8b32f8e188">
 Fig 1. System diagram for the cryptocurrency wallet. It shows the input/output tput and software/hardware, and how the program runs on Python as well as the different databases the code exchanges information.
 
 ## Test plan
@@ -91,16 +91,14 @@ Fig 1. System diagram for the cryptocurrency wallet. It shows the input/output t
 
 ## Flowcharts
 
-![386459934_1200604738009110_2348546487285065411_n](https://github.com/hasmhib/unit1-2024/assets/142870448/5df7cdc9-2276-49d6-8a6b-2a0f7b2ab4a8)
+<img width="max" alt="Screen Shot 2023-10-05 at 2 59 36" src="https://github.com/hasmhib/unit1-2024/assets/142870448/eb8d5c72-56f8-4ee3-8ef4-49ea6f2aa2c0">
 Fig 2. The flow diagram for the sign up system where clients can create an account and start using sing the cryptocurrency wallet. It receives inputs from the user, opens up a csv file named "users.csv" and appends that data into the database if the given password and the confirmation password matches. When that is successfully complete, it will notify the user and proceeds to ask if they would like to exit or continue to login. if exit, it will execute exit(), and if login, it will execute the login() function. 
 
-![386863920_1626443091098644_456211345082400213_n](https://github.com/hasmhib/unit1-2024/assets/142870448/b4e595bf-8e7d-40f0-8f69-0590266a418c)
+<img width="max" alt="Screen Shot 2023-10-05 at 3 00 21" src="https://github.com/hasmhib/unit1-2024/assets/142870448/a1ac938d-8926-455e-840c-8e1943795ad1">
 Fig 3. The flow diagram for a code that ensures that the client is not spending above the monthly limit that they imposed on themselves. The code first opens two csv files, one being the “atm.csv” where all the transactions are recorded, and the “limit.csv” where the monthly limit that they client implemented is recorded. When the client attempts to withdraw cryptocurrency, the system will first add the amount of cryptocurrency to the withdraw_balance variable, where the amount of cryptocurrency spent that month is accumulatively recorded. Next, it will ensure that the withdraw_balance does not exceed the monthly limit imposed, and if it does, it will print the message “Sorry, you have reached the limit to spend this month.”
 
-![384547502_833611304885865_6744060710249008360_n](https://github.com/hasmhib/unit1-2024/assets/142870448/69210792-6951-48bb-9527-7bfe17c87076)
+<img width="max" alt="Screen Shot 2023-10-05 at 2 59 36" src="https://github.com/hasmhib/unit1-2024/assets/142870448/78072160-afe9-4e83-b042-05940e9d1b92">
 Fig 4. The flow diagram for the deposit function of this system. It will ask for the amount that the user wants to deposit first, and then integer validate that input to ensure that its s a number and not an alphabet. Then, it will convert that input to Japanese yen and append that transaction data into the atm.csv file with its original cryptocurrency amount and yen conversion. When successfully completed the code will print “Saved” and return to the menu.
-
-
 
 
 # Criteria C: Development
