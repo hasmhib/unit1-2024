@@ -103,6 +103,14 @@ Fig 4. The flow diagram for the deposit function of this system. It will ask for
 
 # Criteria C: Development
 
+## Technique used
+1. Functions
+2. For/While loops
+3. If/else statements
+4. List Comprehinsion
+5. Import csv,datetime
+6. Input validation
+
 ## User Registration
 ```.py
 email = input("Enter email address: ")
