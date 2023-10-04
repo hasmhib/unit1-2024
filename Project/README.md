@@ -25,7 +25,18 @@ I will to design and make a crypto wallet application for a client who is s a lo
 
 citations : https://www.investopedia.com/usd-coin-5210435#:~:text=USD%20Coin%20(USDC)%20is%20a,stable%2C%20making%20USDC%20a%20stablecoin. 
 
-Justify the tools/structure of your solution
+## Why USD crypto coin?
+
+1. Price Stability: The main benefit of this USD coins is that their prices remain stable. USD coins can be the best choice if the users wants to make transactions or hold value without being concerned about big price changes.
+2. Trading pairs: USD coins trading pairs are available on many cryptocurrency exchanges, allowing you to instantly deposit or withdraw without having to swap your coins for fiat money. This may be advantageous to traders.
+3. Cross-Border Transactions: USD ecoins can make international transfers and cross-border transactions easier since US dallar is very stable. This allows you to send and receive money without worrying about changing exchange rates.
+
+## Why Python?
+
+1. Flexibility and versatility Python provides excellent code, input, and imported item flexibility, ensuring multipurpose features. Enabling special features like real-time updates on a specific item. In Ms. Sato's situation, it aims her in keeping track of the coin's value.
+2. Interface Python features a user-friendly, intuitive interface that makes it simple to code, work in the terminal, and run and test the code. It has a numerous number of integrated libraries and tools make coding simpler and more time-effective. All of this makes it simple for Ms. Sato to read and use the electronic ledger.
+3. Preservation and readable Software upgrades and maintenance are easy to handle and the bug appearing in the code is much less because Python is so flaxible with various functions. Because it enables all of these possibilities to be implemented in a straightforward system with easy-to-understand, clear, and easy syntax. This guarantees that Ms. Sato will benefit from this electronic ledger for a very long time, that will be easier to upgrade and expand further.
+
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
@@ -41,7 +52,18 @@ Justify the tools/structure of your solution
 
 <img width="max" alt="Screen Shot 2023-10-03 at 23 08 04" src="https://github.com/hasmhib/unit1-2024/assets/142870448/c6bcbaae-e1d9-4958-8126-835b4937d8ff">
 Fig 1. System diagram for the cryptocurrency wallet. It shows the input/output tput and software/hardware, and how the program runs on Python as well as the different databases the code exchanges information.
- 
+
+## Test plan
+
+|              Test Type             |                                                                          Target                                                                         |                                                                                  Procedure                                                                                 |                                                                                                                                                                                            Expected Outcome                                                                                                                                                                                            |
+|:----------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|      Functional: Unit testing      |                                                                   validate_int_input.                                                                   |                                 1. Use the function validate_int_input 2. Enter a letter in the terminal 3. Enter a number in the terminal                                 |                                                                                                                                                  1. With a letter an error message will be print 2. With a number the program will output the number.                                                                                                                                                  |
+|  Functional: Integrational testing |                                                                     Sign up system.                                                                     |                                            1. Use the sign up register. 2. Enter a desired username and password in the terminal                                           |                                                                                          After entering a desired username and password, the crendtials should go into a database file to store the credentials. It should also print "Registeration Successful!" after the username and password is entered.                                                                                          |
+|  Functional: Integrational testing |                                                                      Login system.                                                                      |                                        1. Use the function login. 2. Enter your credentials (username and password) in the terminal                                        |                                                                                                                With the correct username and password input, the code should proceed to show the menu. In any other cases, access must be denied to the user and the program will exit.                                                                                                                |
+| Functional : Integrational testing |                                                                  Create a transaction.                                                                  | 1. Choose to create a transaction 2. Enter the date: Input day, month, year 3. Enter expense category 4. Enter expense amount, price 5. Choose to view transaction history | When the transaction function is activated, the user should be provided with an option to choose how much cryptocurrency, on what purpose[Food, Groceries, Transport, Cosmetics, Clothes, Subscriptions, Others. Along with the date of the input, the program will input these data into the "atm.csv" where all transactions are recorded and organized, where datasets are made easily accessible.  |
+|    Non-functional: Load testing    | Testing if transaction history shows all data without any glitches or bugs. Additionally, all newly inputted transaction data should be displayed well. |                            1. Login to the Crypto Wallet 2. Select Create or View Transaction History option 3. Select View transaction history                            |                                                                  All information in the list should be falling in the appropriate column and row. All datasets must be in the appropriate location and be correct and accurate from the data. Furthermore, any new transactions the user inputted should be added to the spreadsheet.                                                                  |
+| Non-functional: Usuability testing |                         The login instructions and options displayed in main menu after logging in are clear and easy to follow.                        |                                                                           1. Run program 2. Login                                                                          |                                                                                                                                         The login and sign in instructions are clear, and the main menu items can be easily read, identified, and understood.                                                                                                                                          |
+|    Non-functional: Response time   |                                                  Testing if code responds to user interaction promptly                                                  |                                     1. Login to the Crypto Wallet 2. Choose any options and follow the prompted directions that follow                                     |                                                                                                                                    There are no bugs and errors with the code, and the program sustains a prompt respond with accurate informations from databases.                                                                                                                                    | 
 
 ## Record of Tasks
 | Task No |                                     Planned Action                                    |                                                                                                               Planned Outcome                                                                                                              | Time estimate | Target completion date | Criterion |
@@ -83,58 +105,26 @@ Fig 4. The flow diagram for the deposit function of this system. It will ask for
 
 # Criteria C: Development
 
-## Login System
-My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using a if condition and the open command to work with a csv file.
-
-The flow diagram for program is shown in **Figure1** in the first line of the code. I am defining a function called try_login with two inputs (name and password) ,both are type string. The output is boolean because I only need a True if the user and password exist in the database file. Note: there is some Python code in the operations.
-
-**Figure1**
-![IMG_0020](https://github.com/hasmhib/unit1-2024/assets/142870448/73cb0e76-25a0-4fe6-abee-05a2562b329c)
-
-
-```.py
-def try_login(name:str, password:str)->bool:
-    with open("users.csv", mode='r') as f:
-        data = f.readlines()
-    logged_in = False
-    for line in data:
-        uname = line.split(',')[0]
-        upass = line.split(',')[1].strip()
-
-        if uname == name and upass == password:
-            logged_in = True
-            break
-    return logged_in
-
-attempts = 3
-name = input("Please enter your username")
-password = input("Please enter your password")
-result = try_login(name = name,password = password)
-while result == False and attempts>0:
-    name = input("[Error] Please enter your username")
-    password = input("Please enter your password")
-    result = try_login(name=name, password=password)
-    attempts -= 1
-
-if result == False:
-    print("You are not authorized. Exiting")
-    exit(1)
-
-if result == True:
-    print("Welcome")
-```
-
 ## Option 1: User Registration
 My cleint 
 ```.py
-def register(uname:str, password:str):
-    file = open("credentials.csv", "a")
-    salty = "computerscience"
-    to_hash = uname + password + salty
-    hashed_password = hmac.new(''.encode(), to_hash.encode(), 'sha512').hexdigest()
-    file.write(f"{uname},{hashed_password}\n")
+email = input("Enter email address: ")
+password = input("Enter password: ")
+conf_pwd = input("Confirm password: ")
+if conf_pwd == password:
+    with open("users.csv", "a") as file:
+        file.write(f"{email},{conf_pwd}\n")
+    file.close()
+    print("You have registered successfully!")
+    exit_login = input("Would you like to exit(x) or login?(l):")
+    if exit_login=="x":
+        exit()
+    elif exit_login=="l":
+        login()
+else:
+    print("Password is not same as above! \n")
 ```
-The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, and it adds their crendentials into a file with and encrypted password. The encryption I used in this is called "hashing". Encryption is the process of encoding plain text or any information in such a way that only authorized people can read it with a corresponding key, like a password, so that confidential data can be protected from unauthorized persons. Hashing converts any amount of data into a fixed-length hash that cannot be reversed. In my code, it is hashed using a random string of characters, known as a salt. This is an additional input to my code above to hash the user's password.
+The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, and it adds their crendentials into a file if the if statement of confirming whether the provided password and confirmation password matches is true. Registered users will be able to login afterwards, and use the functions provided by this program. When registeration is complete, users are given two options of whether exiting the program or continuing to a login screen. This is also coded with if,elif statements. 
 
 ## Option 2: Withdraw
 ```.py
@@ -177,9 +167,9 @@ The first part of creating a digital ledger for a client is to create a registra
             print("Sorry, you have reached the limit to spend this month.")
             menu()
 ```
-My client wants to sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) so I used while loop and brackets [] to allow users to sort transactions by using number that corresponds to the numbers on the list. Also, by using option 6, the user enables to set the limit amoount of cryptocurrency per month and 
+My client wants to sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) so I used while loop and brackets [] to allow users to sort transactions by using number that corresponds to the numbers on the list. Also, by using option 6, the user enables to set the limit amoount of cryptocurrency per month and ensure that her spendigns will not exceed her expected expenditure unwillingly. 
 
-## Option 3: Balance
+## Option 3: Deposit
 ```.py
 msg_deposit = "Enter amount to deposit($): "
 amount = validate_int_user(msg=msg_deposit, menu="")
@@ -191,8 +181,9 @@ with open('atm.csv', mode='a') as f:
 print("Saved")
 menu()
 ```
+The client wants to be able to deposit USD coins into their cryptocurrency wallet. This code asks the user for the amount of USD coins they would like to deposit to their wallet, and records a transaction of the respective deposition into the atm.csv file. Informations such as date of the depsition and JPY conversion of the USD coins are also provided as record. 
 
-## Option 4: Transactions
+## Option 4: Transaction history
 ```.py
     if option == 4:  # transactions
         with open('atm.csv', mode='r') as f:
@@ -210,7 +201,7 @@ menu()
             print("=" * 49)
         menu()
 ```
-The code above prints out the users recorded transactions into an organized spreadsheet. This will allow the client to easliy see all of their past transaction data. It is simple and visually appealing. It is able to print all recent transactions created by the user by using a for loop. With the for loop, it will continue to go through the data in the "sheet.csv" file and print the data into an organized spreadsheet with all the data in the appropiate column until there is no more data to print. It makes sure each piece of information is placed in the correct column to prevent disorganization.
+The code above prints out the users recorded transactions into an organized spreadsheet. This will allow the client to easliy see all of their past transaction data. It is simple and visually appealing. It is able to print all recent transactions created by the user by using a for loop. With the for loop, it will continue to go through the data in the "atm.csv" file and print the data into an organized spreadsheet with all the data in the appropiate column until there is no more data to print. It makes sure each piece of information is placed in the correct column to prevent disorganization.
 
 ## Option 5: Set the limit of cryptocurrency to use per month
 
