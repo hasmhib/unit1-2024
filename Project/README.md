@@ -9,21 +9,7 @@
 
 Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however at the moment she is tracking all his transaction using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms Sato to find past transactions or important statistics about the currency. Ms Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics. 
 
-Apart for this requirements, Ms Sato is open to explore a cryptocurrency selected by the developer.
-| Name   | Coin            |   | Name | Coin |
-|--------|-----------------|---|------|------|
-| Keeler | ETH             |   |      |      |
-| Rocky  | DOGE            |   |      |      |
-| Yuiko  | BNB(Binance)    |   |      |      |
-| Jan    | Tether (USDT)   |   |      |      |
-| Antoni | XRP(Ripple)     |   |      |      |
-| Victor | Cardano (ADA)   |   |      |      |
-| Manaha | LTC (LIte Coin) |   |      |      |
-| Marina | Solano (SOL)    |   |      |      |
-| May    | (DAI)           |   |      |      |
-| Ayane  | Zcash (ZEC)     |   |      |      |
-An example of the data stored is 
-
+### Example
 | Date | Description | Category | Amount  |
 |------|-------------|----------|---------|
 | Sep 23 2022 | bought a house | Expenses | 10 BTC |
@@ -118,27 +104,118 @@ if result == True:
     print("Welcome")
 ```
 
-## Option 1: Deposit
+## Option 1: User Registration
 My cleint 
 ```.py
+def register(uname:str, password:str):
+    file = open("credentials.csv", "a")
+    salty = "yakyushitaiiii"
+    to_hash = uname + password + salty
+    hashed_password = hmac.new(''.encode(), to_hash.encode(), 'sha512').hexdigest()
+    file.write(f"{uname},{hashed_password}\n")
 ```
+The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, and it adds their crendentials into a file with and encrypted password. The encryption I used in this is called "hashing". Encryption is the process of encoding plain text or any information in such a way that only authorized people can read it with a corresponding key, like a password, so that confidential data can be protected from unauthorized persons. Hashing converts any amount of data into a fixed-length hash that cannot be reversed. In my code, it is hashed using a random string of characters, known as a salt. This is an additional input to my code above to hash the user's password.
 
 ## Option 2: Withdraw
-My client wants to sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) so I used while loop and brackets [] to allow users to sort transactions by using number that corresponds to the numbers on the list. Also, by using option 6, the user enables to set the limit amoount of cryptocurrency per month and 
-
 ```.py
+ if option == 2:  # withdraw
+        amount = int(input("Enter the amount($): "))  # Convert amount to an integer
+        categories = ["Foods", "Groceries", "Transport", "Cosmetics", "Clothes", "Subscriptions", "Others"]
+        print_menu(categories)
+        category_new = -1
+        while category_new not in [1, 2, 3, 4, 5, 6]:
+            category_new = validate_int_user(msg="Enter an option: ", menu=categories)
+
+        with open('atm.csv', mode='r') as f:
+            data = f.readlines()
+
+        withdraw_balance = 0
+
+        with open("limit.csv", mode="r") as f:
+            limit = f.readlines()
+
+        now = datetime.datetime.now()
+        current_month = now.strftime('%m')
+
+        for line in data:
+            date, category, line_amount, yen = line.strip().split(',')
+            line_amount = int(line_amount)  # Convert the line_amount to an integer
+            if category != "Deposit" and date[5:7] == current_month:
+                withdraw_balance += abs(line_amount)  # Accumulate as positive
+
+        # Check if the user exceeds the limit
+        if withdraw_balance + amount <= int(limit[0]):
+            with open('atm.csv', mode='a') as w:
+                today = datetime.date.today()
+                yen = round(145.3 * amount, 2)
+                line = f"{today},{categories[category_new - 1]},{-amount},{yen}\n"  # Save amount as negative
+                w.writelines(line)
+                print("Saved, thank you!")
+                menu()
+            w.close()
+        else:
+            print("Sorry, you have reached the limit to spend this month.")
+            menu()
 ```
+My client wants to sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) so I used while loop and brackets [] to allow users to sort transactions by using number that corresponds to the numbers on the list. Also, by using option 6, the user enables to set the limit amoount of cryptocurrency per month and 
 
 ## Option 3: Balance
 ```.py
+msg_deposit = "Enter amount to deposit($): "
+amount = validate_int_user(msg=msg_deposit, menu="")
+date = datetime.date.today()
+yen = round(145.3 * int(amount), 2)
+with open('atm.csv', mode='a') as f:
+    line = f"{date},Deposit,{amount},{yen}\n"
+    f.writelines(line)
+print("Saved")
+menu()
 ```
 
-## Option 5: Transactions
-The code above prints out the users recorded transactions by using for loop. This will allow the client to easliy see all of their past transaction data. It is simple and visually appealing. With the for loop, it will continue to go through the data in the "atm.csv" file and print the data into an organized spreadsheet with all the data in the appropiate column until there is no more data to print. It makes sure each piece of information is placed in the correct column to prevent disorganization.
+## Option 4: Transactions
 ```.py
-```
+    if option == 4:  # transactions
+        with open('atm.csv', mode='r') as f:
+            print("Transaction History:")
+            print("{:<12} {:<15} {:<10} {:<10}".format("Date", "Category", "Amount", "Yen(Convertion)"))
+            print("=" * 49)
 
-## Option 6: Set the limit of cryptocurrency to use per month
+            for line in f:
+                date, category, amount, yen = line.strip().split(',')
+                amount = int(amount)
+                yen = float(yen)  # Convert Yen to float for readability
+
+                print("{:<12} {:<15} {:<10} {:<10}".format(date, category, amount, yen))
+
+            print("=" * 49)
+        menu()
+```
+The code above prints out the users recorded transactions into an organized spreadsheet. This will allow the client to easliy see all of their past transaction data. It is simple and visually appealing. It is able to print all recent transactions created by the user by using a for loop. With the for loop, it will continue to go through the data in the "sheet.csv" file and print the data into an organized spreadsheet with all the data in the appropiate column until there is no more data to print. It makes sure each piece of information is placed in the correct column to prevent disorganization.
+
+## Option 5: Set the limit of cryptocurrency to use per month
 
 ```.py
+limit = int(input("Please enter the limit.csv of cryptocurrency to spend per month: "))
+        with open("limit.csv", "w") as l:
+            l.writelines(f"{limit}")
+            print("Limit is set, thank you!")
+        l.close()
+        menu()
 ```
+As the client does not want to spend more than they have, they wanted a monthly limit. At first, this was a challenge, because I did not know how to restrict the withdrawal of balance. However, after doing my due diligence and research, I learned how to set limits through basic user inputs and if statements. 
+
+```.py
+if withdraw_balance + amount <= int(limit[0]):
+    with open('atm.csv', mode='a') as w:
+        today = datetime.date.today()
+        yen = round(145.3 * amount, 2)
+        line = f"{today},{categories[category_new - 1]},{-amount},{yen}\n"  # Save amount as negative
+        w.writelines(line)
+        print("Saved, thank you!")
+        menu()
+    w.close()
+else:
+    print("Sorry, you have reached the limit to spend this month.")
+    menu()
+```
+By employing an if statement in the withdraw system, I was able to successfully implement a monthly limit to how much cryptocurrency is spent. The client is able to set this limit themselves. 
