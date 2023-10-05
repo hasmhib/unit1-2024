@@ -91,7 +91,7 @@ Fig 1. System diagram for the cryptocurrency wallet. It shows the input/output a
 Fig 2. The flow diagram for the sign up system where clients can create an account and start using sing the cryptocurrency wallet. It receives inputs from the user, opens up a csv file named "users.csv" and appends that data into the database if the given password and the confirmation password matches. When that is successfully complete, it will notify the user and proceeds to ask if they would like to exit or continue to login. if exit, it will execute exit(), and if login, it will execute the login() function. 
 
 
-<img width="max" alt="Screen Shot 2023-10-05 at 12 38 31" src="https://github.com/hasmhib/unit1-2024/assets/142870448/926de715-bd53-4296-bbef-b303f4b7f8cd">
+<img width="max" alt="Screen Shot 2023-10-05 at 13 46 18" src="https://github.com/hasmhib/unit1-2024/assets/142870448/05fbd29c-6848-4af5-bc46-5bec0f660fe8">
 
 Fig 3. The flow diagram for a code that ensures that the client is not spending above the monthly limit that they imposed on themselves. The code first opens two csv files, one being the “atm.csv” where all the transactions are recorded, and the “limit.csv” where the monthly limit that they client implemented is recorded. When the client attempts to withdraw cryptocurrency, the system will first add the amount of cryptocurrency to the withdraw_balance variable, where the amount of cryptocurrency spent that month is accumulatively recorded. Next, it will ensure that the withdraw_balance does not exceed the monthly limit imposed, and if it does, it will print the message “Sorry, you have reached the limit to spend this month.”
 
