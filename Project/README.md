@@ -88,13 +88,13 @@ Fig 1. System diagram for the cryptocurrency wallet. It shows the input/output a
 
 ## Flowcharts
 
-<img width="max" alt="Screen Shot 2023-10-05 at 2 59 36" src="https://github.com/hasmhib/unit1-2024/assets/142870448/eb8d5c72-56f8-4ee3-8ef4-49ea6f2aa2c0">
+<img width="max" alt="Screen Shot 2023-10-05 at 12 37 31" src="https://github.com/hasmhib/unit1-2024/assets/142870448/64d61141-ff00-4852-8b5e-2261ad09cf45">
 Fig 2. The flow diagram for the sign up system where clients can create an account and start using sing the cryptocurrency wallet. It receives inputs from the user, opens up a csv file named "users.csv" and appends that data into the database if the given password and the confirmation password matches. When that is successfully complete, it will notify the user and proceeds to ask if they would like to exit or continue to login. if exit, it will execute exit(), and if login, it will execute the login() function. 
 
-<img width="max" alt="Screen Shot 2023-10-05 at 3 00 21" src="https://github.com/hasmhib/unit1-2024/assets/142870448/a1ac938d-8926-455e-840c-8e1943795ad1">
+<img width="max" alt="Screen Shot 2023-10-05 at 12 38 31" src="https://github.com/hasmhib/unit1-2024/assets/142870448/926de715-bd53-4296-bbef-b303f4b7f8cd">
 Fig 3. The flow diagram for a code that ensures that the client is not spending above the monthly limit that they imposed on themselves. The code first opens two csv files, one being the “atm.csv” where all the transactions are recorded, and the “limit.csv” where the monthly limit that they client implemented is recorded. When the client attempts to withdraw cryptocurrency, the system will first add the amount of cryptocurrency to the withdraw_balance variable, where the amount of cryptocurrency spent that month is accumulatively recorded. Next, it will ensure that the withdraw_balance does not exceed the monthly limit imposed, and if it does, it will print the message “Sorry, you have reached the limit to spend this month.”
 
-<img width="max" alt="Screen Shot 2023-10-05 at 2 59 36" src="https://github.com/hasmhib/unit1-2024/assets/142870448/78072160-afe9-4e83-b042-05940e9d1b92">
+<img width="max" alt="Screen Shot 2023-10-05 at 12 39 06" src="https://github.com/hasmhib/unit1-2024/assets/142870448/d9448a80-fb94-471b-9f0c-38559dc0999c">
 Fig 4. The flow diagram for the deposit function of this system. It will ask for the amount that the user wants to deposit first, and then integer validate that input to ensure that its s a number and not an alphabet. Then, it will convert that input to Japanese yen and append that transaction data into the atm.csv file with its original cryptocurrency amount and yen conversion. When successfully completed the code will print “Saved” and return to the menu.
 
 
