@@ -130,7 +130,7 @@ else:
 The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, "Bob, bob123" and it adds their crendentials into a file if the if statement of confirming whether the provided password and confirmation password matches is true. Registered users will be able to login afterwards, and use the functions provided by this program. When registeration is complete, users are given two options of whether exiting the program or continuing to a login screen. This is also coded with if,elif statements. 
 
 
-## Option 1: Deposit
+## Deposit
 ```.py
 msg_deposit = "Enter amount to deposit($): "
 amount = validate_int_user(msg=msg_deposit, menu="")
@@ -145,7 +145,7 @@ menu()
 The client wants to be able to deposit USD coins into their cryptocurrency wallet "100 USD". This code asks the user for the amount of USD coins they would like to deposit to their wallet, and records a transaction of the respective deposition into the atm.csv file "USD coins into atm.csv file". Informations such as date of the depsition and JPY conversion of the USD coins are also provided as record. 
 
 
-## Option 2: Withdraw
+## Withdraw
 ```.py
  if option == 2:  # withdraw
         amount = int(input("Enter the amount($): "))  # Convert amount to an integer
@@ -189,7 +189,7 @@ The client wants to be able to deposit USD coins into their cryptocurrency walle
 My client wants to sort transactions by category (food, transport, cosmetics, clothes, subscriptions and others) so I used while loop and brackets [] to allow users to sort transactions by using number that corresponds to the numbers on the list. Also, by using option 6, the user enables to set the limit amount of cryptocurrency per month and ensure that her spendigns will not exceed her expected expenditure unwillingly. This code effectively processes financial transactions, keeps track of the user's spending, and prevents them from exceeding their monthly limit. It also records transactions in a atm.csv file for future reference. "if category != "Deposit" and date[5:7] == current_month:" At first, I was challenged to figure out this, but I figured out by using brackets[] to check the month. In here, atm.csv file saves like this "2023-10-05,Deposit,100,14530.0". If category, which is next to the YYYY, MM, DD, not "Deposit", which means that these tranactions are withdraw, so we have to calculate how many the user spent that month. This "date[5:7]" corresponds to the month, in this case "10", to categorize what month did the user spent the money and to check whether the limit that user set is smaller than the amount they used during the month. 
 
 
-## Option 4: Transaction history
+## Transaction history
 ```.py
     if option == 4:  # transactions
         with open('atm.csv', mode='r') as f:
@@ -209,7 +209,7 @@ My client wants to sort transactions by category (food, transport, cosmetics, cl
 ```
 The code above prints out the users recorded transactions into an organized spreadsheet. This will allow the client to easliy see all of their past transaction data. It is simple and visually appealing. It is able to print all recent transactions created by the user by using a for loop. With the for loop, it will continue to go through the data in the "atm.csv" file and print the data into an organized spreadsheet with all the data in the appropiate column until there is no more data to print. It makes sure each piece of information is placed in the correct column to prevent disorganization.
 
-## Option 5: Set the limit of cryptocurrency to use per month
+## Set Monthly Limit
 
 ```.py
 limit = int(input("Please enter the limit.csv of cryptocurrency to spend per month: "))
@@ -237,5 +237,12 @@ else:
 ```
 By employing an if statement in the withdraw system, I was able to successfully implement a monthly limit to how much cryptocurrency is spent. The client is able to set this limit themselves. 
 
-## Citarions
-https://www.investopedia.com/usd-coin-5210435#:~:text=USD%20Coin%20(USDC)%20is%20a,stable%2C%20making%20USDC%20a%20stablecoin. 
+## Criteria D: Functionality
+
+
+## Citations
+1. Picardo, Elvis. “USD Coin (USDC): Definition, How It Works in Currency, and Value.” Investopedia, Investopedia, www.investopedia.com/usd-coin-5210435. Accessed 15 Sep. 2023. 
+2. Sanyal, Sayantani. 10 Reasons Why Python Is One Of The Best Programming Languages. Retrieved September 17, 2023
+3. Advantages and disadvantages of python - how it is dominating Programming World. DataFlair. Retrieved September 18, 2023
+4. Why learn python? 6 reasons why it's so hot right now. CodingNomads, 2022, January 19. Retrieved September 18, 2023
+5. “How to Hash Passwords in Python.” GeeksforGeeks, 22 June 2022. Retrieved September 24, 2023
