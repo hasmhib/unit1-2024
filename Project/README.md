@@ -1,8 +1,5 @@
 # Crypto Wallet
 
-![](22ROOSE-master768.gif)  
-<sub>Illustration for Glenn Harvey</sub>
-
 # Criteria A: Planning
 
 ## Problem definition
@@ -19,7 +16,7 @@ Ms. Sato is a local trader who is interested in the emerging market of cryptocur
 ## Proposed Solution
 
 Design statement:
-I will to design and make a crypto wallet application for a client who is s a local trader. The crypto wallet will be about tracking crypto wallet transactions and is constructed using the software python. It will take 3 weekns to make and will be evaluated according to the criteria A.
+I will to design and make a crypto wallet application for a client who is s a local trader. The crypto wallet will be about tracking crypto wallet transactions and is constructed using the software python. It will take 3 weeks to make and will be evaluated according to the criteria A.
 
 ** USD Coin (USDC) is a digital currency that is fully backed by U.S. dollar assets. USDC is a tokenized U.S. dollar, with the value of one USDC coin pegged as close to the value of one U.S. dollar as it can get. The value of USDC is designed to remain stable, making USDC a stablecoin. **
 
@@ -51,7 +48,7 @@ citations : https://www.investopedia.com/usd-coin-5210435#:~:text=USD%20Coin%20(
 ## System Diagram
 
 <img width="max" alt="Screen Shot 2023-10-05 at 2 58 16" src="https://github.com/hasmhib/unit1-2024/assets/142870448/5b5d43d1-1065-4c35-8448-fd8b32f8e188">
-Fig 1. System diagram for the cryptocurrency wallet. It shows the input/output tput and software/hardware, and how the program runs on Python as well as the different databases the code exchanges information.
+Fig 1. System diagram for the cryptocurrency wallet. It shows the input/output and software/hardware, and how the program runs on Python as well as the different databases the code exchanges information.
 
 ## Test plan
 
