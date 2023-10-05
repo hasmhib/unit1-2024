@@ -238,7 +238,7 @@ else:
 By employing an if statement in the withdraw system, I was able to successfully implement a monthly limit to how much cryptocurrency is spent. The client is able to set this limit themselves. 
 
 ## Criteria D: Functionality
-
+![Video of the program](https://drive.google.com/file/d/12_uODawpAeoz7x0KRApsqWMEgRv-JoYD/view?usp=sharing)
 
 ## Citations
 1. Picardo, Elvis. “USD Coin (USDC): Definition, How It Works in Currency, and Value.” Investopedia, Investopedia, www.investopedia.com/usd-coin-5210435. Accessed 15 Sep. 2023. 
