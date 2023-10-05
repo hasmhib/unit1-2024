@@ -20,8 +20,6 @@ I will to design and make a crypto wallet application for a client who is s a lo
 
 ** USD Coin (USDC) is a digital currency that is fully backed by U.S. dollar assets. USDC is a tokenized U.S. dollar, with the value of one USDC coin pegged as close to the value of one U.S. dollar as it can get. The value of USDC is designed to remain stable, making USDC a stablecoin. **
 
-citations : https://www.investopedia.com/usd-coin-5210435#:~:text=USD%20Coin%20(USDC)%20is%20a,stable%2C%20making%20USDC%20a%20stablecoin. 
-
 ## Why USD crypto coin?
 
 1. Price Stability: The main benefit of this USD coins is that their prices remain stable. USD coins can be the best choice if the users wants to make transactions or hold value without being concerned about big price changes.
@@ -238,3 +236,6 @@ else:
     menu()
 ```
 By employing an if statement in the withdraw system, I was able to successfully implement a monthly limit to how much cryptocurrency is spent. The client is able to set this limit themselves. 
+
+## Citarions
+https://www.investopedia.com/usd-coin-5210435#:~:text=USD%20Coin%20(USDC)%20is%20a,stable%2C%20making%20USDC%20a%20stablecoin. 
