@@ -24,3 +24,6 @@ print(out)
 ## Proof of work
 <img width="max" alt="Screen Shot 2023-09-13 at 15 01 08" src="https://github.com/hasmhib/unit1-2024/assets/142870448/9bfc6a00-670d-4527-9cb2-773b1b291da1">
 
+## Flow daiagram
+![IMG_2A4C545FD5B2-1](https://github.com/hasmhib/unit1-2024/assets/142870448/9706961a-c103-4720-b802-ad710010def3)
+
