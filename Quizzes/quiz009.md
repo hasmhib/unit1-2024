@@ -34,6 +34,8 @@ print("\n".join(power(n)))
 <img width="max" alt="Screen Shot 2023-10-09 at 12 09 46" src="https://github.com/hasmhib/unit1-2024/assets/142870448/3e6a5087-8773-49d0-93ac-8ac4f0faf17c">
 
 ## Flow diagram
+![IMG_4857CCE7869D-1](https://github.com/hasmhib/unit1-2024/assets/142870448/7538a48f-ad95-4c81-a9bf-2485b93f200d)
+
 
 
 
