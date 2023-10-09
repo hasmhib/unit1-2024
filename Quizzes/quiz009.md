@@ -1,18 +1,7 @@
 # Quiz 009
 <img width="max" alt="Screen Shot 2023-10-09 at 12 05 23" src="https://github.com/hasmhib/unit1-2024/assets/142870448/4703d064-7774-4d2d-b08d-4a5cafbd437e">
 
-## Code for SL
-```py
-
-```
-
-## Proof of work for SL
-
-
-## Flow daigram
-
-
-## Code for HL
+## Code
 ```py
 s = input("Input a number with unit: ")
 n = [int(s) for s in s.split() if s.isdigit()]
@@ -41,7 +30,7 @@ print("\n".join(power(n)))
 
 ```
 
-## Proof of work for HL
+## Proof of work
 <img width="max" alt="Screen Shot 2023-10-09 at 12 09 46" src="https://github.com/hasmhib/unit1-2024/assets/142870448/3e6a5087-8773-49d0-93ac-8ac4f0faf17c">
 
 ## Flow diagram
