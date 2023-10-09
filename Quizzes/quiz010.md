@@ -2,7 +2,7 @@
 <img width="max" alt="Screen Shot 2023-10-09 at 12 12 43" src="https://github.com/hasmhib/unit1-2024/assets/142870448/c2b89bec-eaa4-4666-b8d2-4ea1f80e0eb0">
 
 
-## Code for SL
+## Code
 ```py
 out = ''
 days = ['Fr', 'Sa', 'Su', 'Mo','Tu', 'We', 'Th']
@@ -21,11 +21,6 @@ for d in range (1,31):
 print(out)
 ```
 
-## Proof of work for SL
+## Proof of work
 <img width="max" alt="Screen Shot 2023-09-13 at 15 01 08" src="https://github.com/hasmhib/unit1-2024/assets/142870448/9bfc6a00-670d-4527-9cb2-773b1b291da1">
 
-## Code for HL
-```py
-```
-
-## Proof of work for HL
