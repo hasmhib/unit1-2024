@@ -37,6 +37,9 @@ print(out)
 <img width="max" alt="Screen Shot 2023-10-09 at 13 56 26" src="https://github.com/hasmhib/unit1-2024/assets/142870448/c4c557e5-7bdf-4306-858e-392479aad397">
 
 ## Flow diagram
+![Uploading IMG_C9298C05DE6B-1.jpeg…]()
+
+
 
 
 
