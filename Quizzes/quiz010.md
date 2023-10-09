@@ -1,4 +1,4 @@
-# Quiz 010
+# Quiz 009
 <img width="max" alt="Screen Shot 2023-10-09 at 12 05 23" src="https://github.com/hasmhib/unit1-2024/assets/142870448/4703d064-7774-4d2d-b08d-4a5cafbd437e">
 
 ## Code for SL
